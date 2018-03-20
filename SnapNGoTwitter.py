@@ -1,5 +1,5 @@
+import twitter, re, json
 from datetime import *
-import twitter, re
 
 class Task:
     def __init__(self, id, location, datetime, compensation):
@@ -35,11 +35,12 @@ class SnapNGo:
         self.task_ID = 1
         self.task_dictionary = {}
 
-        self.consumer_key = ''
-        self.consumer_key_secret = ''
+        keys = json.load(open('keys.json'))
+        self.consumer_key = keys['consumer_key']
+        self.consumer_key_secret = keys['consumer_key_secret']
 
-        self.access_token = ''
-        self.access_token_secret = ''
+        self.access_token = keys['access_token']
+        self.access_token_secret = keys['access_token_secret']
 
         self.api = twitter.Api(
             consumer_key=self.consumer_key,
