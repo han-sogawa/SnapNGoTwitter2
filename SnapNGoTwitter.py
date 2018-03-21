@@ -29,7 +29,6 @@ class Task:
             self.tweetSent = True
             self.tweetSentTime = datetime.now()
 
-
 class SnapNGo:
     def __init__(self):
         self.task_ID = 1
@@ -47,6 +46,7 @@ class SnapNGo:
             consumer_secret=self.consumer_key_secret,
             access_token_key=self.access_token,
             access_token_secret=self.access_token_secret)
+
 
     def selectAction(self):
         print("Type '1' to add new tasks")
@@ -128,4 +128,5 @@ class SnapNGo:
         print("writing to file")
         return
 
-SnapNGo().selectAction()
+if __name__ == '__main__':
+    SnapNGo().selectAction()
