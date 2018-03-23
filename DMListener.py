@@ -19,6 +19,7 @@ class DMListener( StreamListener ):
 
     def on_data( self, status ):
         status_json = json.loads(status)
+        print(status)
         if 'direct_message' in status_json:
             name = str(status_json['direct_message']['sender']['screen_name'])
             text = str(status_json['direct_message']['text'])
