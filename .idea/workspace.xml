@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3380e76-62e8-40d9-81e0-ef9d7751dd60" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/DMListener.py" afterPath="$PROJECT_DIR$/DMListener.py" />
+      <change beforePath="$PROJECT_DIR$/SnapNGoTwitter.py" afterPath="$PROJECT_DIR$/SnapNGoTwitter.py" />
+      <change beforePath="$PROJECT_DIR$/tasks.csv" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,18 +15,31 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/SnapNGoTwitter2$DMStreaming.coverage" NAME="DMStreaming Coverage Results" MODIFIED="1521594378595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SnapNGoTwitter2$SnapNGoTwitter.coverage" NAME="SnapNGoTwitter Coverage Results" MODIFIED="1521763761555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SnapNGoTwitter2$SnapNGoTwitter.coverage" NAME="SnapNGoTwitter Coverage Results" MODIFIED="1521815945621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SnapNGoTwitter2$DMListener.coverage" NAME="DMListener Coverage Results" MODIFIED="1521763896482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="SnapNGoTwitter.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SnapNGoTwitter.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SnapNGoTwitter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="38" column="62" lean-forward="true" selection-start-line="38" selection-start-column="62" selection-end-line="38" selection-end-column="62" />
+            <state relative-caret-position="759">
+              <caret line="120" column="31" lean-forward="false" selection-start-line="120" selection-start-column="31" selection-end-line="120" selection-end-column="31" />
               <folding>
-                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#136#451#0" expanded="false" />
+                <element signature="e#485#665#0" expanded="false" />
+                <element signature="e#716#911#0" expanded="false" />
+                <element signature="e#955#1104#0" expanded="false" />
+                <element signature="e#1140#1355#0" expanded="false" />
+                <element signature="e#1404#1961#0" expanded="false" />
+                <element signature="e#1999#3383#0" expanded="false" />
+                <element signature="e#3431#4277#0" expanded="false" />
+                <element signature="e#4329#5072#0" expanded="false" />
+                <element signature="e#5114#5580#0" expanded="false" />
+                <element signature="e#5616#5750#0" expanded="false" />
+                <element signature="e#5803#6282#0" expanded="false" />
+                <element signature="e#5851#6195#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -41,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DMListener.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DMListener.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DMListener.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+            <state relative-caret-position="641">
+              <caret line="27" column="50" lean-forward="true" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -61,6 +75,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>strp</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,9 +100,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1489" />
-    <option name="width" value="1522" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1249" />
+    <option name="width" value="1762" />
     <option name="height" value="1931" />
   </component>
   <component name="ProjectView">
@@ -120,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.DMListener">
+  <component name="RunManager" selected="Python.SnapNGoTwitter">
     <configuration name="DMListener" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -185,8 +204,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.DMListener" />
-        <item index="1" class="java.lang.String" itemvalue="Python.SnapNGoTwitter" />
+        <item index="0" class="java.lang.String" itemvalue="Python.SnapNGoTwitter" />
+        <item index="1" class="java.lang.String" itemvalue="Python.DMListener" />
         <item index="2" class="java.lang.String" itemvalue="Python.DMStreaming" />
       </list>
     </recent_temporary>
@@ -208,14 +227,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1489" y="0" width="1522" height="1931" extended-state="0" />
+    <frame x="-13" y="-13" width="3026" height="1946" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4486361" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33604178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4486361" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33314154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -223,7 +242,7 @@
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39988393" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -262,7 +281,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -271,7 +292,20 @@
         <state relative-caret-position="3927">
           <caret line="120" column="39" lean-forward="false" selection-start-line="120" selection-start-column="39" selection-end-line="120" selection-end-column="39" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#136#451#0" expanded="false" />
+            <element signature="e#485#665#0" expanded="false" />
+            <element signature="e#716#911#0" expanded="false" />
+            <element signature="e#955#1104#0" expanded="false" />
+            <element signature="e#1140#1355#0" expanded="false" />
+            <element signature="e#1404#1961#0" expanded="false" />
+            <element signature="e#1999#3383#0" expanded="false" />
+            <element signature="e#3431#4277#0" expanded="false" />
+            <element signature="e#4329#5072#0" expanded="false" />
+            <element signature="e#5114#5580#0" expanded="false" />
+            <element signature="e#5616#5750#0" expanded="false" />
+            <element signature="e#5803#6282#0" expanded="false" />
+            <element signature="e#5851#6195#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -302,22 +336,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SnapNGoTwitter.py">
+    <entry file="file://$PROJECT_DIR$/DMListener.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="38" column="62" lean-forward="true" selection-start-line="38" selection-start-column="62" selection-end-line="38" selection-end-column="62" />
+        <state relative-caret-position="641">
+          <caret line="27" column="50" lean-forward="true" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DMListener.py">
+    <entry file="file://$PROJECT_DIR$/SnapNGoTwitter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        <state relative-caret-position="759">
+          <caret line="120" column="31" lean-forward="false" selection-start-line="120" selection-start-column="31" selection-end-line="120" selection-end-column="31" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#136#451#0" expanded="false" />
+            <element signature="e#485#665#0" expanded="false" />
+            <element signature="e#716#911#0" expanded="false" />
+            <element signature="e#955#1104#0" expanded="false" />
+            <element signature="e#1140#1355#0" expanded="false" />
+            <element signature="e#1404#1961#0" expanded="false" />
+            <element signature="e#1999#3383#0" expanded="false" />
+            <element signature="e#3431#4277#0" expanded="false" />
+            <element signature="e#4329#5072#0" expanded="false" />
+            <element signature="e#5114#5580#0" expanded="false" />
+            <element signature="e#5616#5750#0" expanded="false" />
+            <element signature="e#5803#6282#0" expanded="false" />
+            <element signature="e#5851#6195#0" expanded="false" />
           </folding>
         </state>
       </provider>

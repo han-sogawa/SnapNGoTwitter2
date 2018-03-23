@@ -29,11 +29,21 @@ class DMListener( StreamListener ):
             print 'Message: ' + text
             print 'Message Received at: ' + time
             print '----------------------------------------------------------------'
+            determineResponse(text, name, time)
         return True
     
 
     def on_error( self, status ):
         print("Error:", status)
+
+class SnapNGoBot:
+    def __init__(self):
+        self.auth = OAuthHandler(consumer_key, consumer_key_secret)
+        self.auth.secure = True
+        self.auth.set_access_token(access_token, access_token_secret)
+
+        self.dmlistener = Stream(self.auth, DMListener())
+        self.dmlistener.userstream()
 
 def main():
     auth = OAuthHandler(consumer_key, consumer_key_secret)

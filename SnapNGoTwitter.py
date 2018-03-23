@@ -1,4 +1,4 @@
-import twitter, re, json
+import twitter, re, json, csv
 from datetime import *
 
 class Task:
@@ -29,6 +29,9 @@ class Task:
             self.tweetSent = True
             self.tweetSentTime = datetime.now()
 
+    def getFileRow(self):
+        return [self.id, self.location, self.datetime.strftime("%B %d, %Y %I:%M%p"), self.compensation, self.tweetSent, self.tweetSentTime, self.assignedTo, self.taskSubmitted, self.submissionPhotoLink, self.submissionTime]
+
 class SnapNGo:
     def __init__(self):
         self.task_ID = 1
@@ -46,7 +49,6 @@ class SnapNGo:
             consumer_secret=self.consumer_key_secret,
             access_token_key=self.access_token,
             access_token_secret=self.access_token_secret)
-
 
     def selectAction(self):
         print("Type '1' to add new tasks")
@@ -85,6 +87,7 @@ class SnapNGo:
     def addTasksViaCommandLine(self):
         input = raw_input('Please enter a task in the following format: location, month, day, year, hour, minutes\n>')
         while(input != 'end'):
+            #check to see if input has correct length and is otherwise correct format
             input_array = re.sub(r'\s', '', input).split(',')
             task_date = date(int(input_array[3]), int(input_array[1]), int(input_array[2]))
             task_time = time(int(input_array[4]), int(input_array[5]))
@@ -98,12 +101,22 @@ class SnapNGo:
 
         print 'All tasks: \n'
         self.printTasks()
-        return
 
     def addTasksViaFile(self, file_name):
-        #TODO: implement this to read from a csv file
-        print("reading tasks from a file")
-        return
+        with open(file_name, 'rb') as task_file:
+            reader = csv.reader(task_file)
+            skip_header = 0
+            for row in reader:
+                if skip_header > 0:
+                    location = row[0]
+                    compensation = row[6]
+                    task_date = date(int(row[3]), int(row[1]), int(row[2]))
+                    task_time = time(int(row[4]), int(row[5]))
+                    task_datetime = datetime.combine(task_date, task_time)
+                    self.task_dictionary[self.task_ID] = Task(self.task_ID, location, task_datetime, compensation)
+                    self.task_ID += 1
+                skip_header += 1
+            print "Completed. " + str(skip_header) + " tasks read from " + file_name
 
     def sendUnsentTweets(self):
         send_tweet = raw_input('Are you sure you would like to send tweets for tasks not already sent? Type Y for yes and N for no')
@@ -113,20 +126,23 @@ class SnapNGo:
                 if(not self.task_dictionary[i + 1].tweetSent):
                     self.task_dictionary[i + 1].sendTaskTweet(self.api)
                     tweets_sent += 1
+
         print("Finished. " + str(tweets_sent) + " were sent.")
-        return
 
     def printTasks(self):
         s = ''
         for i in range(self.task_ID-1):
             s += self.task_dictionary[i+1].toString()
         print('All Tasks:\n' + s)
-        return
 
     def writeTasksToFile(self, file_name):
-        #TODO: Implement writing tasks to a CSV file
-        print("writing to file")
-        return
+        with open(file_name, 'wb') as file:
+            file_writer = csv.writer(file)
+            file_writer.writerow(['Task ID', 'Location', 'Date', 'Compensation', 'Tweet Sent', 'Tweet Sent Time', 'Assigned To', 'Task Submitted', 'Submission Photo Link', 'Submission Time'])
+            for id in range(1, self.task_ID):
+                file_writer.writerow(self.task_dictionary[id].getFileRow())
+
+        print "Completed. " + str(self.task_ID -1) + " tasks written to " + file_name
 
 if __name__ == '__main__':
     SnapNGo().selectAction()
